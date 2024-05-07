@@ -1,5 +1,6 @@
 /* Desktop version */
 
+/*Grid Container for dog images*/
 #dogImageContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -106,8 +107,6 @@ a:hover {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding-left: 50px;
 }
-
-
 
 body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -236,6 +235,4 @@ button:hover::before {
     padding: .5rem 1rem;
     font-size: .8rem;
   }
-
-
 }
