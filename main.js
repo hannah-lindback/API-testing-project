@@ -58,11 +58,11 @@ $(document).ready(function () {
     }).then(function (data) {
       console.log(data);
       data.message.forEach(function (imageUrl) {
-        var breed = getRandomBreed(); // Get a random breed from the list
+        var breed = getRandomBreed();
         var $imageWrapper = $("<div class='image-wrapper'></div>");
         var $image = $("<img>").attr("src", imageUrl).attr("alt", "Dog Image");
         $imageWrapper.append($image);
-        $imageWrapper.attr("data-breed", breed); // Set data attribute for breed name
+        $imageWrapper.attr("data-breed", breed); 
         $("#dogImageContainer").append($imageWrapper);
       });
     });
@@ -79,14 +79,11 @@ $(document).ready(function () {
 
   // Event listener for the button to fetch and display new images
   $("#getDog").on("click", function () {
-    // Clear existing images
     $("#dogImageContainer").empty();
-    // Fetch and display new images
     fetchAndDisplayImages();
   });
 
   $(document).ready(function () {
-    // Array of random messages for the popover
     var randomMessages = [
       "Yay! Here's a dog!",
       "Look, a cute dog!",
@@ -96,8 +93,10 @@ $(document).ready(function () {
       "Doggo alert!",
       "Enjoy this adorable dog!",
       "Woof woof!",
-      "Look! Yet another dog!"
-      // Add more messages as needed
+      "Look! Yet another dog!",
+      "Such a floof!",
+      "A dog a day keeps the blues away!"
+      
     ];
 
     $("#dogImageContainer").on("mouseenter", ".image-wrapper img", function () {
